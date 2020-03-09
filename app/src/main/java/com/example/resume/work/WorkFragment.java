@@ -1,4 +1,4 @@
-package com.example.resume;
+package com.example.resume.work;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,13 +9,13 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class ProjectsDetailedFragment extends Fragment {
+import com.example.resume.R;
 
-    //TODO adding a functional onClick method, so this fragment can be used.
+public class WorkFragment extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_detailed_project, container, false);
+        return inflater.inflate(R.layout.fragment_work, container, false);
     }
 }

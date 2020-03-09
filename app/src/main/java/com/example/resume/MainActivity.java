@@ -6,6 +6,11 @@ import androidx.fragment.app.Fragment;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.example.resume.about.AboutFragment;
+import com.example.resume.education.EducationFragment;
+import com.example.resume.projects.ProjectsFragment;
+import com.example.resume.skills.SkillsFragment;
+import com.example.resume.work.WorkFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
