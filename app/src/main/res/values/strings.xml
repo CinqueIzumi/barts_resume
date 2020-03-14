@@ -5,4 +5,19 @@
     <string name="nav_projects">Projects</string>
     <string name="nav_skills">Skills</string>
     <string name="nav_work">Work</string>
+
+    <string name="aboutme_name">Bart Peereboom</string>
+    <string name="aboutme_email">Email:\nba.peereboom@gmail.com</string>
+    <string name="aboutme_tel">LinkedIn:\nhttps://linkedin.com/in/bpbos</string>
+    <string name="aboutme_github">Github:\nhttps://github.com/cinqueizumi</string>
+    <string name="aboutme_aboutheader">About me</string>
+    <string name="aboutme_about">Creative and highly motivated Computer Science Student seeking an internship as an app developer.</string>
+
+    <string name="aboutme_awards">Awards</string>
+    <string name="aboutme_awardOneTitle">Robocup Junior</string>
+    <string name="aboutme_awardOneDesc">First place in the dutch RoboCup Junior tournament, in the soccer 2:2 category, 2016</string>
+    <string name="aboutme_awardTwoTitle">Science Maker Awards 2015</string>
+    <string name="aboutme_awardTwoDesc">Award for the revolutionary way of implementing the kicker in our soccer robot, which ended up earning us the first place in the RoboCup Junior</string>
+    <string name="aboutme_awardThreeTitle">Robocup Junior</string>
+    <string name="aboutme_awardThreeDesc">First place in the dutch RoboCup Junior tournament, in the soccer 2:2 category, 2015</string>
 </resources>
