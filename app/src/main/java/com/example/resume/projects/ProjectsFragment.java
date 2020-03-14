@@ -39,7 +39,7 @@ public class ProjectsFragment extends Fragment {
         recyclerView.setItemAnimator(new DefaultItemAnimator());
 
         data = new ProjectFactory().createProjects();
-        adapter = new projectAdapter(data);
+        adapter = new projectAdapter(data, getActivity());
         recyclerView.setAdapter(adapter);
     }
 }

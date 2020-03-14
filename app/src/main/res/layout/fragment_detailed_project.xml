@@ -1,11 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content" >
 
-    <TextView
-        android:id="@+id/projectName"
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:layout_centerInParent="true"/>
-</RelativeLayout>
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            android:layout_alignBottom="@+id/projectImageDetail"
+            android:id="@+id/titleDetail"
+            android:text="placeholder"
+            android:padding="16dp"
+            style="@style/TextAppearance.AppCompat.Headline"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?android:textColorSecondary"
+            android:layout_below="@+id/titleDetail"
+            android:id="@+id/clientNameDetail"
+            android:text="placeholder"
+            android:padding="16dp"
+            style="@style/TextAppearance.AppCompat.Subhead"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/clientNameDetail"
+            android:text="placeholder"
+            android:id="@+id/projectDescDetail"
+            android:padding="16dp"
+            style="@style/TextAppearance.AppCompat.Subhead"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/projectImageDetail"
+            android:adjustViewBounds="true"/>
+    </RelativeLayout>
+
+</ScrollView>
