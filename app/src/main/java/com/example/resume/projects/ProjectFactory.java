@@ -9,10 +9,17 @@ public class ProjectFactory {
     private String client_avans = "Avans University of Applied Sciences";
     private String client_personal = "Personal";
 
+    /**
+     * The constructor of the project factory
+     */
     public ProjectFactory() {
         projects = new ArrayList<>();
     }
 
+    /**
+     * A method which gets used to create all the past projects, which will later be displayed in the app
+     * @return an arraylist of projects
+     */
     public ArrayList<ProjectModel> createProjects() {
         projects.add(new ProjectModel("CV App", client_personal, "An app which functions as my resume.",
                 "My resume in app form. Everything that can be found on my resume, can also be found in this app. This project can be found on my github.", R.drawable.poggers));

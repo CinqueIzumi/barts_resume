@@ -26,22 +26,27 @@ public class ProjectsDetailedFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
+        // Creating the view
         view = inflater.inflate(R.layout.fragment_detailed_project, container, false);
 
+        // Getting the project, which has been passed onto this fragment from the recyclerview
         Bundle bundle = getArguments();
         if(bundle != null) {
             detailedProject = bundle.getParcelable("Project");
         }
 
+        // Initializing the Text / Imageviews
         TextView projectName = view.findViewById(R.id.titleDetail);
         TextView projectClient = view.findViewById(R.id.clientNameDetail);
         TextView projectDesc = view.findViewById(R.id.projectDescDetail);
         ImageView projectImage = view.findViewById(R.id.projectImageDetail);
 
+        // Setting the textviews to the values of the project
         projectName.setText(detailedProject.getProjectName());
         projectClient.setText(detailedProject.getClientName());
         projectDesc.setText(detailedProject.getProjectDesc());
 
+        // Loading in the picture belonging to the project using Glide
         Glide.with(view.getContext()).load(detailedProject.getImageRes()).into(projectImage);
         return view;
     }
@@ -50,6 +55,7 @@ public class ProjectsDetailedFragment extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        // Creating how the app will handle it when users try to go back
         OnBackPressedCallback callback = new OnBackPressedCallback(true) {
             @Override
             public void handleOnBackPressed() {
@@ -57,6 +63,7 @@ public class ProjectsDetailedFragment extends Fragment {
             }
         };
 
+        // Adding the callback to the activity
         requireActivity().getOnBackPressedDispatcher().addCallback(this, callback);
     }
 }

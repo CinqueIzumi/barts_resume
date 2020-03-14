@@ -31,14 +31,19 @@ public class ProjectsFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        // Initializing the recyclerview
         RecyclerView recyclerView = (RecyclerView) getView().findViewById(R.id.projectRecyclerView);
         recyclerView.setHasFixedSize(true);
 
+        // Setting the layoutmanager and itemanimator for the recyclerview
         layoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
 
+        // Creating the dataset for the adapter
         data = new ProjectFactory().createProjects();
+
+        // Creating a new adapter, and binding the adapter to the recyclerview
         adapter = new projectAdapter(data, getActivity());
         recyclerView.setAdapter(adapter);
     }
