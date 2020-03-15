@@ -13,7 +13,7 @@ import com.bumptech.glide.Glide;
 import com.example.resume.R;
 import java.util.ArrayList;
 
-public class projectAdapter extends RecyclerView.Adapter<projectAdapter.MyViewHolder> {
+public class ProjectAdapter extends RecyclerView.Adapter<ProjectAdapter.MyViewHolder> {
 
     private ArrayList<ProjectModel> dataset;
     private Context mContext;
@@ -23,7 +23,7 @@ public class projectAdapter extends RecyclerView.Adapter<projectAdapter.MyViewHo
      * @param data a dataset consisting out of all the projects
      * @param context the given context
      */
-    public projectAdapter(ArrayList<ProjectModel> data, Context context) {
+    public ProjectAdapter(ArrayList<ProjectModel> data, Context context) {
         this.dataset = data;
         this.mContext = context;
     }
@@ -45,7 +45,7 @@ public class projectAdapter extends RecyclerView.Adapter<projectAdapter.MyViewHo
     }
 
     /**
-     * This method helps with displaying the correct items at the corrent index
+     * This method helps with displaying the correct items at the current index
      * @param holder the current item
      * @param listPosition the index of the current item in the recyclerview
      */
@@ -60,7 +60,7 @@ public class projectAdapter extends RecyclerView.Adapter<projectAdapter.MyViewHo
         // Getting the image for the item that has been clicked on
         int imageRes = dataset.get(listPosition).getImageRes();
 
-        // Setting the textviews to display the values that belong to the item that has been clicked on
+        // Setting the textviews to display the values that belong to the corresponding item
         projectName.setText(dataset.get(listPosition).getProjectName());
         clientName.setText(dataset.get(listPosition).getClientName());
         projectSummary.setText(dataset.get(listPosition).getProjectSummary());

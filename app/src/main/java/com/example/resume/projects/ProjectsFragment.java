@@ -44,7 +44,7 @@ public class ProjectsFragment extends Fragment {
         data = new ProjectFactory().createProjects();
 
         // Creating a new adapter, and binding the adapter to the recyclerview
-        adapter = new projectAdapter(data, getActivity());
+        adapter = new ProjectAdapter(data, getActivity());
         recyclerView.setAdapter(adapter);
     }
 }

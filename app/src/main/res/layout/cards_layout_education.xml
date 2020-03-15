@@ -12,37 +12,36 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/projectImage"
-            android:id="@+id/projectTitle"
-            android:text="TITLE PLACEHOLDER"
+            android:id="@+id/education_specialization"
+            android:text="Specialization placeholder"
             android:padding="8dp"
             style="@style/TextAppearance.AppCompat.Headline"/>
 
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/projectTitle"
-            android:textColor="?android:textColorSecondary"
-            android:id="@+id/projectClient"
-            android:text="client placeholder"
+            android:id="@+id/education_schoolName"
+            android:text="School Name placeholder"
             android:padding="8dp"
+            android:layout_below="@id/education_specialization"
             style="@style/TextAppearance.AppCompat.Subhead"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/projectClient"
-            android:id="@+id/projectSummary"
-            android:text="summary placeholder"
+            android:id="@+id/education_location"
+            android:text="Location placeholder"
+            android:layout_below="@id/education_schoolName"
             android:padding="8dp"
-            style="@style/TextAppearance.AppCompat.Subhead"/>
+            android:layout_alignParentRight="true" />
 
-        <ImageView
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/projectImage"
-            android:adjustViewBounds="true"/>
+            android:id="@+id/education_date"
+            android:text="Date placeholder"
+            android:layout_below="@id/education_schoolName"
+            android:padding="8dp"/>
 
     </RelativeLayout>
 
